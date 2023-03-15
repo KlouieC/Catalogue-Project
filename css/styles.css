@@ -1,0 +1,386 @@
+/* Here we can add anything we want to suit our project. */
+
+body {
+	background-color: #F2F2F2;
+    font: 1rem/1.5 "Poppins", sans-serif;
+}
+
+.jumbotron{
+	padding: 30px;
+}
+
+.container{
+	padding-top:100px; /* A quick hack to stop stuff from disappearing below fixed navbar: Change this if it's not suitable for your project. */
+}
+
+textarea{
+	height:140px;
+}
+form{
+	max-width:920px; /* A quick hack to stop forms from being waaaayyy tooo wide. Remove if you don't like. */
+}
+
+h2 {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #094067;
+	font-weight: 700;
+}
+
+b {
+  font-weight: bold;
+}
+
+.required::before {
+    color: red;
+    content: "*";
+    position: absolute;
+    margin-left: -15px;
+    font-weight: bold;
+}
+
+/* .outputImg {
+	float: right;
+} */
+
+.output {
+	margin-top: -50px;
+}
+
+.banner {
+    margin-top: -50px;
+}
+
+.lists {
+    position: sticky;
+    top: 0;
+    margin: 0;
+    padding: 1.5rem 0;
+}
+
+.lists a {
+    text-decoration: none;
+    display: block;
+    padding: 0.85rem 2.25rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.selected,
+.selected:hover {
+    background-color: #232946;
+    color: #F2F2F2;
+    text-align: center;
+}
+
+.image {
+    width: 2.75rem;
+}
+
+/* btn header */
+
+.btn2 {
+  text-align: center;
+  cursor: pointer;
+  margin-top: 4px;
+  padding: .25rem;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+
+.btn2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+
+.btn2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 1.25rem;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+
+.btn2:hover span {
+  padding-right: 1.563rem;
+}
+
+.btn2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*Section Header*/
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.inner-container {
+    max-width: 1024px;
+    margin: auto;
+}
+
+header section:first-of-type {
+    color: #F2F2F2;
+    background: url("../img/header-banner.webp") center / cover;
+}
+
+header section:first-of-type .inner-container {
+    min-height: calc(100vh - 10rem);
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+header section:first-of-type h2 {
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1;
+    margin-bottom: 4rem;
+}
+
+header section:first-of-type h2 span {
+    display: block;
+    padding-left: 3rem;
+}
+
+header section:first-of-type p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 37ch;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+/* btn1 */
+.btn1,
+.btn1 *,
+.btn1 :after,
+.btn1 :before,
+.btn1:after,
+.btn1:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn1 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #B85042;
+  background-image: none;
+  color: #F2F2F2;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#B85042, #F2F2F2);
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.btn1:disabled {
+  cursor: default;
+}
+
+.btn1:-moz-focusring {
+  outline: auto;
+}
+
+.btn1 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn1 [hidden] {
+  display: none;
+}
+
+.btn1 {
+  --background: #B85042;
+  background: none;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+
+.btn1 span {
+  display: block;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.btn1:hover {
+    text-decoration: none;
+}
+
+.btn1:after,
+.btn1:before {
+  --tilt: 20px;
+  background: #E7E8D1;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: -webkit-clip-path 0.2s ease;
+  transition: clip-path 0.2s ease;
+  transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
+  width: 100%;
+  z-index: -1;
+}
+
+.btn1:after {
+  --thickness: 5px;
+  background: var(--background);
+  height: calc(100% - var(--thickness) * 2);
+  left: var(--thickness);
+  top: var(--thickness);
+  width: calc(100% - var(--thickness) * 2);
+}
+
+.btn1:hover span {
+  transform: translateX(-20px);
+  color: #F2F2F2;
+}
+
+.btn1:hover:after,
+.btn1:hover:before {
+  -webkit-clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+}
+
+/* FOOTER */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-footer {
+    padding: 0 2rem;
+}
+
+footer * {
+    color: #000;
+    font-style: normal;
+}
+
+footer .bottom {
+    background-color: #90B4CE;
+    padding: 1.6rem 0;
+}
+
+footer .bottom .container {
+    flex-direction: column;
+    align-items: baseline;
+}
+
+footer .bottom p {
+    margin: 0;
+    order: 2;
+    font-weight: 400;
+}
+
+footer .bottom .socials {
+    margin: 0;
+    order: 1;
+}
+
+footer svg {
+    height: 3.5rem;
+}
+
+footer svg:hover,
+footer svg:focus {
+    filter: invert(72%) sepia(72%) saturate(316%) hue-rotate(169deg) brightness(98%) contrast(92%);
+}
+
+footer .bottom a {
+    text-transform: unset;
+    font-size: unset;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-gap: 1rem;
+}
+
+a {
+  text-decoration: none;
+  line-height: 1.75;
+}
+
+a+span {
+  color: rgb(173, 173, 173);
+}
+
+h5.card-title {
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #67568c;
+}
+
+@media screen and (min-width: 61.875rem) {
+
+    .selected,
+    .selected:hover {
+		clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+        margin-left: -9%;
+    }
+
+    footer .bottom {
+        padding: 0.8rem 0;
+    }
+
+    footer .bottom .container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    footer .bottom p {
+        order: unset;
+    }
+
+    footer .socials a {
+        font-size: 0;
+        margin-left: 1rem;
+    }
+
+    
+}
